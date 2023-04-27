@@ -1,6 +1,10 @@
 /*estilos generales para la pagina de inicio*/
 body {
-    background-color: rgb(231, 229, 229);
+    background-image: url('https://img.freepik.com/free-vector/white-background-with-wavy-lines_23-2149124447.jpg?w=1380&t=st=1682617698~exp=1682618298~hmac=f38c11ea9cebf80710e69f32c26432b59fc95b134818903bb69770837e5a1d42');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
     color: #000;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
@@ -21,13 +25,14 @@ h1 {
     margin: 0 auto;
     display: block;
     margin-left: 15px;
+    margin-top: 10px;
 }
 
 /* estilos para la tabla de la pagina de inicio */
 #table {
     width: 50%;
     border: 1px solid #000;
-    border-radius: 20px;
+    border-radius: 10px;
     margin: 0 auto;
     text-align: center;
     font-size: 12px;
@@ -50,7 +55,38 @@ h1 {
 }
 
 #table tr:nth-child(odd) {
+    background-color: #0000005b;
+}
+
+#table tr:nth-child(even) {
     background-color: #0000006e;
 }
+
+#table tr:hover {
+    background-color: #e6c328;
+}
+
+#table tr:hover td {
+    color: black;
+}
+
+#form {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 25px;
+}
+
+#form input {
+    width: 50%;
+    padding: 5px;
+    border-radius: 20px;
+    border: 1px solid #000;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
 
 /* Path: style.css */
