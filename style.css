@@ -49,17 +49,17 @@ h1 {
 }
 
 #table td {
-    color: black;
+    color: rgb(0, 0, 0);
     border: 1px solid #000000;
     padding: 5px;
 }
 
 #table tr:nth-child(odd) {
-    background-color: #0000005b;
+    background-color: #ffffff5b;
 }
 
 #table tr:nth-child(even) {
-    background-color: #0000006e;
+    background-color: #00000025;
 }
 
 #table tr:hover {
