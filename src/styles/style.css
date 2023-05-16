@@ -90,31 +90,66 @@ h1 {
 }
 
 
-/* Path: style.css */
 
-#paginar,
-#atras {
-    background-color: transparent;
+
+/* Estilos para la paginación */
+#paginar {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    border: none;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  @media (max-width: 500px) {
+    #paginar {
+      position: relative;
+      left: 0;
+      transform: translateX(0);
+      padding: 0 10px;
+      flex-wrap: wrap;
+    }
+  }
+  
+  #paginar button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #paginar button:hover {
+    background-color: #e0e0e0;
+  }
+  
+  #paginar button.active {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+  }
+  
+  /* Estilos para el botón de búsqueda */
+  #form button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #form button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Estilos para el campo de búsqueda */
+  #search {
     padding: 8px;
-    border: none;
-    border-radius: 4px;
-    font-size: 16px;
-    cursor: pointer;
-    margin-right: 8px;
-}
-
-#button-container {
-    text-align: center;
-}
-
-#button-container button {
-    background-color: transparent;
-    border: none;
-    color: black;
-    padding: 8px 0px;
-    text-decoration: none;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-}
-
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 200px;
+  }
