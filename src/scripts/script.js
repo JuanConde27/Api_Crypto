@@ -101,7 +101,7 @@ fetch("https://api.binance.com/api/v3/ticker/price")
     console.log("Error:", error);
   });
 
-form.addEventListener("submit", (event) => {
+form.addEventListener("input", (event) => {
   event.preventDefault();
   currentPage = 1;
   updateTable();
